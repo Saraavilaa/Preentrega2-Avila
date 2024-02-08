@@ -1,0 +1,834 @@
+/*FONDO DE LA PAGINA*/
+    body {
+            background: linear-gradient(43deg, #ffb335, #ffb436, #f5d3ff, #ffac74);
+            background-size: 800% 800%;
+        
+            -webkit-animation: AnimationName 27s ease infinite;
+            -moz-animation: AnimationName 27s ease infinite;
+            animation: AnimationName 27s ease infinite;
+        }
+        
+        @-webkit-keyframes AnimationName {
+            0%{background-position:13% 0%}
+            50%{background-position:88% 100%}
+            100%{background-position:13% 0%}
+        }
+        @-moz-keyframes AnimationName {
+            0%{background-position:13% 0%}
+            50%{background-position:88% 100%}
+            100%{background-position:13% 0%}
+        }
+        @keyframes AnimationName {
+            0%{background-position:13% 0%}
+            50%{background-position:88% 100%}
+            100%{background-position:13% 0%}
+        }
+
+/* RESET */
+    * {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+
+/* CLOSEABLE ITEM LIST */
+
+    .closeableul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0px;
+    }
+    
+    .closeableul li {
+        border: 1px solid none;
+        margin-top: -1px;
+        background-color: #f3eae8;
+        padding: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        color: black;
+        display: block;
+        position: relative;
+        text-align: center;
+    }
+    
+    .closeableul li:hover {
+        background-color: #f3eae8;
+    }
+    
+    .close {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        right: 0%;
+        padding: 12px 16px;
+        transform: translate(0%, -50%);
+    }
+    
+    .close:hover {background:#f3eae8;}
+
+/* FIN CLOSEABLE */
+
+/*LOS TEXTOS DE EL HOME*/
+    header {
+    background-color: none;
+    }
+
+    .h22 {
+        font-family: 'Merriweather Sans', sans-serif;
+        color: #2c3237;
+        justify-content: center;
+        text-align: center;
+        font-size: 25px;
+        margin-top: 15px;
+    }
+
+
+    .h2 {
+        font-family: 'Merriweather Sans', sans-serif;
+        color: #2c3237;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 50px;
+        font-size: 40px;
+        font-style: italic;
+    }
+
+    .h3 {
+        font-family: 'Merriweather Sans', sans-serif;
+        color: #2c3237;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+
+
+/*LISTA DEL NAV BAR*/
+
+    .navbar {
+        display: flex;
+        height: 100%;
+    }
+
+
+    .navbar-toggler {
+        border: none;
+    }
+
+    .lista {
+        border-top: 1px solid #353e46;
+        border-bottom: 1px solid #353e46;
+        font-weight: bold;
+        font-size: 17px;
+        font-family: 'Merriweather Sans', sans-serif;
+        width: 100%;
+    }
+
+    .dropdown-menu {
+        background-color: #000000;
+    }
+
+    .LIGHT:hover::before {
+        content: '💡';
+    }
+
+    .CARPETS:hover::before {
+        content: '🟧';
+    }
+
+    .MIRRORS:hover::before {
+        content: '🪞';
+    }
+
+    .ON-DESKS:hover::before {
+        content: '🛋️';
+    }
+
+    .PILLOWS:hover::before {
+        content: '☁️';
+    }
+
+    .CLOCKS:hover::before {
+        content: '🕑';
+    }
+
+    .EXTRA:hover::before {
+        content: '📦';
+    }
+
+    .SEE-ALL:hover::before {
+        content: '👀';
+    }
+
+    @media only screen and (max-width: 970px) {
+        .LIGHT::before {
+            content: '💡';
+        }
+    
+        .CARPETS::before {
+            content: '🟧';
+        }
+    
+        .MIRRORS::before {
+            content: '🪞';
+        }
+    
+        .ON-DESKS::before {
+            content: '🛋️';
+        }
+    
+        .PILLOWS::before {
+            content: '☁️';
+        }
+    
+        .CLOCKS::before {
+            content: '🕑';
+        }
+    
+        .EXTRA::before {
+            content: '📦';
+        }
+    
+        .SEE-ALL::before {
+            content: '👀';
+        }
+    
+    }
+/* LOS A TAMBIEN CAMBIAN LOS ENLACES DE HOME Y PLAYLIST */
+    a {
+    color: gray;
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+    transition: all 0.7s ease 0s;
+    }
+
+    a:hover {
+    color: #111c25;
+    }
+
+    ul {
+    list-style: none;
+    }
+
+    a.active {
+    color: #111c25;
+    border-bottom: 2px solid #111c25;
+    }
+
+/* HOME FLECHAS DEL CAROUSEL */
+
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+            filter: invert(100%);
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+            color: #383838;
+    }
+
+/* HOME IMAGENES DEL CAROUSEL */
+    .carousel-item img {
+    width: 30%;
+    height: 30%;
+    max-width: 100%; 
+    max-height: 100%;
+    margin: auto;
+    display: block;
+    }
+
+    .carousel-item img {
+        box-shadow: 0px 1px 67px 6px rgb(255, 255, 255);
+        -webkit-box-shadow: 8px 8px 9px 6px rgb(78, 78, 78);
+        -moz-box-shadow: 0px 1px 67px 6px rgb(243, 243, 243);
+    }
+
+    @media only screen and (max-width: 850px) {
+        .carousel-item img {
+            width: 60%;
+            height: 60%;
+        }
+    }
+
+    .button {
+        position: relative;
+        padding: 20px 35px;
+        background: #ffffff;
+        font-size: 20px;
+        font-weight: 600;
+        color: #000000;
+        box-shadow: 0px 0px 10px 0px rgb(255, 255, 255);
+        border-radius: 100px;
+        border: none;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+    }
+    
+    .star-1 {
+        position: absolute;
+        top: 20%;
+        left: 20%;
+        width: 25px;
+        height: auto;
+        filter: drop-shadow(0 0 0 #fffdef);
+        z-index: -5;
+        transition: all 0.8s cubic-bezier(0.05, 0.83, 0.43, 0.96);
+    }
+    
+    .star-2 {
+        position: absolute;
+        top: 45%;
+        left: 45%;
+        width: 15px;
+        height: auto;
+        filter: drop-shadow(0 0 0 #fffdef);
+        z-index: -5;
+        transition: all 0.8s cubic-bezier(0, 0.4, 0, 1.01);
+    }
+    
+    .star-3 {
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        width: 5px;
+        height: auto;
+        filter: drop-shadow(0 0 0 #fffdef);
+        z-index: -5;
+        transition: all 0.8s cubic-bezier(0, 0.4, 0, 1.01);
+    }
+    
+    .star-4 {
+        position: absolute;
+        top: 20%;
+        left: 40%;
+        width: 8px;
+        height: auto;
+        filter: drop-shadow(0 0 0 #fffdef);
+        z-index: -5;
+        transition: all 0.8s cubic-bezier(0, 0.4, 0, 1.01);
+    }
+    
+    .star-5 {
+        position: absolute;
+        top: 25%;
+        left: 45%;
+        width: 15px;
+        height: auto;
+        filter: drop-shadow(0 0 0 #fffdef);
+        z-index: -5;
+        transition: all 0.8s cubic-bezier(0, 0.4, 0, 1.01);
+    }
+    
+    .star-6 {
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        width: 5px;
+        height: auto;
+        filter: drop-shadow(0 0 0 #fffdef);
+        z-index: -5;
+        transition: all 0.8s cubic-bezier(0, 0.4, 0, 1.01);
+    }
+    
+    .button:hover {
+        background: #000000;
+        color: #ffffff;
+        box-shadow: 0 0 80px #ffffff8c;
+    }
+    
+    .button:hover .star-1 {
+        position: absolute;
+        top: -20%;
+        left: -20%;
+        width: 20px;
+        height: auto;
+        filter: drop-shadow(0 0 10px #fffdef);
+        z-index: 2;
+    }
+    
+    .button:hover .star-2 {
+        position: absolute;
+        top: 35%;
+        left: -25%;
+        width: 15px;
+        height: auto;
+        filter: drop-shadow(0 0 10px #fffdef);
+        z-index: 2;
+    }
+    
+    .button:hover .star-3 {
+        position: absolute;
+        top: 80%;
+        left: -10%;
+        width: 10px;
+        height: auto;
+        filter: drop-shadow(0 0 10px #fffdef);
+        z-index: 2;
+    }
+    
+    .button:hover .star-4 {
+        position: absolute;
+        top: -25%;
+        left: 105%;
+        width: 20px;
+        height: auto;
+        filter: drop-shadow(0 0 10px #fffdef);
+        z-index: 2;
+    }
+    
+    .button:hover .star-5 {
+        position: absolute;
+        top: 30%;
+        left: 115%;
+        width: 15px;
+        height: auto;
+        filter: drop-shadow(0 0 10px #fffdef);
+        z-index: 2;
+    }
+    
+    .button:hover .star-6 {
+        position: absolute;
+        top: 80%;
+        left: 105%;
+        width: 10px;
+        height: auto;
+        filter: drop-shadow(0 0 10px #fffdef);
+        z-index: 2;
+    }
+    
+    .fil0 {
+        fill: #fffdef;
+    }
+    
+  
+/* FOOTER DE REDES DEL HOME Y PLAYLIST */
+
+    .footer1 > div {
+        display: grid;
+        grid-template-columns: repeat(3, 4fr);
+        gap: 3px;
+        grid-template-areas: "footer1 footer2 footer3";
+        text-align: center;
+        padding-top: 15px;
+    }
+
+    .div1, .div2, .div3 {
+        grid-area: footer1 footer2 footer3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        font-family: 'Rubik Mono One', monospace;
+    }
+
+    .Tiktokpageicon, .Instagramicon, .Tiktokpersonalicon {
+        width: 80px;
+        height: auto;
+    }
+
+    @media only screen and (max-width: 480px) {
+        .Tiktokpageicon, .Instagramicon, .Tiktokpersonalicon {
+            width: 40%;
+            height: auto;
+        }
+
+        .div1, .div2, .div3 {
+            grid-area: footer1 footer2 footer3;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+            font-family: 'Rubik Mono One', monospace;
+            font-size: 14px;
+        }
+    }
+
+/* PLAYLIST TEXTO */
+    .playlist {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-family: 'Merriweather Sans', sans-serif;
+        color: #2c3237;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+
+/* PLAYLIST GIF */ 
+    .spotifygif {
+        display: flex;
+        justify-content: center;
+        margin-top: -70px;
+    }
+/* FIN PLAYLIST GIF */
+
+/*SEE ALL FOTOS*/
+
+    .see-all {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 100px;
+        margin: 5%;
+    }
+
+    .see-all img {
+        width: 100%;
+        height: auto;
+        border: 5px solid #696969;
+    }
+
+    @media only screen and (max-width: 480px) {
+        .see-all {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 50px;
+            margin: 2%;
+            margin-top: 10%;
+        }
+    }
+/* CONTACT INFO */
+
+    .section1 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 70px 800px 70px 700px;
+        grid-template-areas:
+        "h11"
+        "personal"
+        "h1"
+        "pagina"
+    }
+
+/* MEDIA PARA MOBILE QUE AJUSTA LOS ELEMENTOS DE CONTACT */
+    @media only screen and (max-width: 450px) {
+        .section1 {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: 120px 600px 50px 600px;
+            grid-template-areas:
+            "h11"
+            "personal"
+            "h1"
+            "pagina"
+        }
+    }
+/* FIN MEDIA */
+
+    .tiktok1 {
+        grid-area: h11;
+        color: #2c3237;
+        text-align: center;
+        font-size: 40px;
+        font-family: 'Bangers', system-ui;
+        font-style: italic;
+    }
+
+    .personal {
+        grid-area: personal;
+        width: 500px;
+        height: auto;
+        transition: transform 0.8s ease, box-shadow 0.8s ease;
+    }
+    
+    .personal {
+        box-shadow: 2px 2px 10px 10px rgb(255, 107, 107);
+        animation: cambiar-color 5s infinite linear;
+    }
+    
+/* KEYFRAMES PARA EL BOXSHADOW DE COLORES */
+    @keyframes cambiar-color {
+        0% {
+            box-shadow: 2px 2px 10px 10px rgb(255, 142, 49);
+        }
+        25% {
+            box-shadow: 2px 2px 10px 10px rgba(255, 249, 190, 0.993);
+        }
+        50% {
+            box-shadow: 2px 2px 10px 10px rgb(255, 152, 111);
+        }
+        75% {
+            box-shadow: 2px 2px 10px 10px rgb(255, 255, 255);
+        }
+        100% {
+            box-shadow: 2px 2px 10px 10px rgb(247, 187, 255);
+        }
+    }
+/* KEYFRAMES FIN */
+    
+    .tiktok2 {
+        grid-area: h1;
+        color: #2c3237;
+        text-align: center;
+        font-size: 40px;
+        font-family: 'Bangers', system-ui;
+        font-style: italic;
+    }
+
+    .pagina {
+        grid-area: pagina;
+        width: 500px;
+        height: auto;
+        transition: transform 0.8s ease, box-shadow 0.8s ease;
+    }
+
+
+    .pagina {
+        box-shadow: 2px 2px 10px 10px rgb(255, 107, 107);
+        animation: cambiar-color 5s infinite linear;
+    }
+/* BOTONES IG Y DISCORD */
+    .Button1 {
+        --glow-color: rgb(217, 176, 255);
+        --glow-spread-color: rgba(191, 123, 255, 0.781);
+        --enhanced-glow-color: rgb(231, 206, 255);
+        --btn-color: rgb(100, 61, 136);
+        border: .25em solid var(--glow-color);
+        padding: 1em 3em;
+        color: var(--glow-color);
+        font-size: 15px;
+        font-weight: bold;
+        background-color: var(--btn-color);
+        border-radius: 1em;
+        outline: none;
+        box-shadow: 0 0 1em .25em var(--glow-color),
+            0 0 4em 1em var(--glow-spread-color),
+            inset 0 0 .75em .25em var(--glow-color);
+        text-shadow: 0 0 .5em var(--glow-color);
+        position: relative;
+        margin-top: 30px;
+        transition: all 0.3s;
+    }
+    
+    .Button2 {
+        --glow-color: rgb(22, 89, 167);
+        --glow-spread-color: rgba(63, 104, 179, 0.781);
+        --enhanced-glow-color: rgb(48, 75, 148);
+        --btn-color: rgb(70, 141, 189);
+        border: .25em solid var(--glow-color);
+        padding: 1em 3em;
+        color: var(--glow-color);
+        font-size: 15px;
+        font-weight: bold;
+        background-color: var(--btn-color);
+        border-radius: 1em;
+        outline: none;
+        box-shadow: 0 0 1em .25em var(--glow-color),
+            0 0 4em 1em var(--glow-spread-color),
+            inset 0 0 .75em .25em var(--glow-color);
+        text-shadow: 0 0 .5em var(--glow-color);
+        position: relative;
+        margin-top: 30px;
+        transition: all 0.3s;
+    }
+
+    .Button2::after {
+        pointer-events: none;
+        content: "";
+        position: absolute;
+        top: 120%;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: var(--glow-spread-color);
+        filter: blur(2em);
+        opacity: .7;
+        transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+    }
+
+    .Button2:hover {
+        color: var(--btn-color);
+        background-color: var(--glow-color);
+        box-shadow: 0 0 1em .25em var(--glow-color),
+            0 0 4em 2em var(--glow-spread-color),
+            inset 0 0 .75em .25em var(--glow-color);
+    }
+    
+    .Button2:active {
+        box-shadow: 0 0 0.6em .25em var(--glow-color),
+            0 0 2.5em 2em var(--glow-spread-color),
+            inset 0 0 .5em .25em var(--glow-color);
+    }
+
+    .Button1::after {
+        pointer-events: none;
+        content: "";
+        position: absolute;
+        top: 120%;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: var(--glow-spread-color);
+        filter: blur(2em);
+        opacity: .7;
+        transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+    }
+    
+    .Button1:hover {
+        color: var(--btn-color);
+        background-color: var(--glow-color);
+        box-shadow: 0 0 1em .25em var(--glow-color),
+            0 0 4em 2em var(--glow-spread-color),
+            inset 0 0 .75em .25em var(--glow-color);
+    }
+    
+    .Button1:active {
+        box-shadow: 0 0 0.6em .25em var(--glow-color),
+            0 0 2.5em 2em var(--glow-spread-color),
+            inset 0 0 .5em .25em var(--glow-color);
+    }
+/* FIN BOTONES IG Y DISCORD*/
+/* MOST WANTED */
+    .tmw {
+        font-family: 'Merriweather Sans', sans-serif;
+        font-size: 30px;
+        color: #2c3237;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        font-style: italic;
+    }
+
+    
+    .espejoasimetrico {
+        font-family: 'Merriweather Sans', sans-serif;
+        font-style: italic;
+        font-size: 40px;
+        margin-top: 100px;
+
+    }
+    
+    .textoespejoasimetrico {
+        font-family: 'Bangers', system-ui;
+        font-size: 20px;
+        border: 4px solid grey;
+    }
+    .imagenesvacias {
+        display: flex;
+        justify-content: space-between;
+        width: 500px;
+        height: 500px;
+        gap: 40px;
+    }
+/* LAS IMAGENES QUE VAN CAMBIANDO */
+
+    @keyframes changeImage {
+        0% { background-image: url('imagenes/mostwanted/espejoasimetrico.jpg'); }
+        25% { background-image: url('imagenes/mostwanted/espejoasimetrico2.jpg'); }
+        50% { background-image: url('imagenes/mostwanted/espejoasimetrico3.jpg'); }
+        75% { background-image: url('imagenes/mostwanted/espejoasimetrico4.jpg'); }
+        100% { background-image: url('imagenes/mostwanted/espejoasimetrico5.jpg'); }
+    }
+
+    .image-slider {
+        width: 500px;
+        height: 600px;
+        overflow: hidden;
+    }
+    
+    .image {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        animation: changeImage 8s infinite;
+        border: 8px solid rgb(78, 78, 78);
+    }
+    
+    .d-grid {
+        display: flex;
+        justify-content: center;
+    }
+
+
+/* BOTONES DE TODAS LAS FOTOS */
+      .example-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 45px;
+      }
+/* BOTONES DEL ESPEJO */
+      .example2-0 {
+        margin-right: 0px;
+      }
+/* FIN BOTONES DEL ESPEJO */
+      .example-2 .icon-content {
+        margin: 0px 10px;
+        margin-bottom: -70px;
+        position: relative;
+      }
+      .example-2 .icon-content .tooltip {
+        transform: translateX(-50%);
+        color: #ffffff;
+        padding: 6px 0px;
+        border-radius: 5px;
+        opacity: 0;
+        visibility: hidden;
+        font-size: 14px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        transition: all 0.3s ease;
+      }
+      .example-2 .icon-content:hover .tooltip {
+        opacity: 1;
+        visibility: visible;
+        top: -50px;
+      }
+      .example-2 .icon-content a {
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        color: #4d4d4d;
+        background-color: #ffeded;
+        transition: all 0.3s ease-in-out;
+      }
+      .example-2 .icon-content a:hover {
+        box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
+      }
+      .example-2 .icon-content a svg {
+         position: relative;
+         margin-top: 5px;
+         z-index: 1;
+         width: 25px;
+         height: 30px;
+      }
+      .example-2 .icon-content a:hover {
+        color: rgb(255, 255, 255);
+      }
+      .example-2 .icon-content a .filled {  
+        position: absolute;
+        top: auto;
+        bottom: -20%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background-color: #000000;
+        transition: all 0.3s ease-in-out;
+      }
+      .example-2 .icon-content a:hover .filled {
+        height: 100%;
+      }
+      .example-2 .icon-content a[data-social="amazon"] .filled,
+      .example-2 .icon-content a[data-social="amazon"] ~ .tooltip {
+        background-color: #da8423;
+      }
+      .example-2 .icon-content a[data-social="Aliexpress"] .filled,
+      .example-2 .icon-content a[data-social="Aliexpress"] ~ .tooltip {
+        background-color: #bd081c;
+      }
+      .example-2 .icon-content a[data-social="Shein"] .filled,
+      .example-2 .icon-content a[data-social="Shein"] ~ .tooltip {
+        background-color: #1f1f1f;
+      }
+      .example-2 .icon-content a[data-social="Mercadolibre"] .filled,
+      .example-2 .icon-content a[data-social="Mercadolibre"] ~ .tooltip {
+        background-color: #ffee00;
+      }
+/* FIN BOTONES DE TODAS LAS FOTOS */

@@ -1,5 +1,5 @@
 /*FONDO DE LA PAGINA*/
-body {
+    body {
         background: linear-gradient(43deg, #ffb335, #ffb436, #f5d3ff, #ffac74);
         background-size: 800% 800%;
     
@@ -102,8 +102,6 @@ body {
         justify-content: center;
         text-align: center;
     }
-
-
 
 /*LISTA DEL NAV BAR*/
 
@@ -219,7 +217,6 @@ body {
     }
 
 /* HOME FLECHAS DEL CAROUSEL */
-
 
     .carousel-control-prev-icon,
     .carousel-control-next-icon {

@@ -1,3 +1,10 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
 /*FONDO DE LA PAGINA*/
     body {
         background: linear-gradient(43deg, #ffb335, #ffb436, #f5d3ff, #ffac74);
@@ -22,13 +29,6 @@
         0%{background-position:13% 0%}
         50%{background-position:88% 100%}
         100%{background-position:13% 0%}
-    }
-
-/* RESET */
-    * {
-        margin: 0;
-        padding: 0;
-        margin-bottom: 10px;
     }
 
 /* CLOSEABLE ITEM LIST */

@@ -478,13 +478,17 @@
         border: 5px solid #696969;
     }
 
-    @media only screen and (max-width: 480px) {
+    @media only screen and (max-width: 710px) {
         .see-all {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 50px;
             margin: 2%;
             margin-top: 10%;
+        }
+
+        .see-all img {
+            border: 3px solid #696969;
         }
     }
 /* CONTACT INFO */

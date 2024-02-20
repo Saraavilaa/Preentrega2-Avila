@@ -509,14 +509,13 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        object-position: 50% 90%;
+        object-position: 90% 90%;
         border-radius: inherit;
         transition: 0.5s ease-in-out;
     }
     
     .card::after {
         content: "";
-        position: absolute;
         inset: 0;
         border: 2px solid rgb(255, 255, 255);
         border-radius: inherit;
@@ -557,12 +556,14 @@
         transform: translateY(50%);
     }
     .card:hover .content h2 {
-        scale: 1;
+        transform: scale(1);
         opacity: 1;
+        color: rgba(255, 255, 255, 0.747);
     }
     .card:hover .content a {
         opacity: 1;
         transform: translateY(0);
+        visibility: visible;
     }
 
 /* CONTACT INFO */

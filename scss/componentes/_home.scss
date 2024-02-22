@@ -1,0 +1,283 @@
+/*LOS TEXTOS DE EL HOME*/
+header {
+    background-color: none;
+    }
+
+    .h22 {
+        font-family: 'Merriweather Sans', sans-serif;
+        color: #2c3237;
+        justify-content: center;
+        text-align: center;
+        font-size: 25px;
+        margin-top: 15px;
+    }
+
+
+    .h2 {
+        font-family: 'Merriweather Sans', sans-serif;
+        color: #2c3237;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 50px;
+        font-size: 40px;
+        font-style: italic;
+    }
+
+    .h3 {
+        font-family: 'Merriweather Sans', sans-serif;
+        color: #2c3237;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+/* LOS A TAMBIEN CAMBIAN LOS ENLACES DE HOME Y PLAYLIST */
+a {
+    color: gray;
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+    transition: all 0.7s ease 0s;
+    }
+
+    a:hover {
+    color: #111c25;
+    }
+
+    ul {
+    list-style: none;
+    }
+
+    a.active {
+    color: #111c25;
+    border-bottom: 2px solid #111c25;
+    }
+
+/* HOME FLECHAS DEL CAROUSEL */
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+            filter: invert(100%);
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+            color: #383838;
+    }
+
+/* HOME IMAGENES DEL CAROUSEL */
+    .carousel-item img {
+    width: 30%;
+    height: 30%;
+    max-width: 100%; 
+    max-height: 100%;
+    margin: auto;
+    display: block;
+    }
+
+    .carousel-item img {
+        box-shadow: 0px 1px 67px 6px rgb(255, 255, 255);
+        -webkit-box-shadow: 8px 8px 9px 6px rgb(78, 78, 78);
+        -moz-box-shadow: 0px 1px 67px 6px rgb(243, 243, 243);
+    }
+
+    @media only screen and (max-width: 850px) {
+        .carousel-item img {
+            width: 60%;
+            height: 60%;
+        }
+    }
+
+    .button {
+        position: relative;
+        padding: 20px 35px;
+        background: #ffffff;
+        font-size: 20px;
+        font-weight: 600;
+        color: #000000;
+        box-shadow: 0px 0px 10px 0px rgb(255, 255, 255);
+        border-radius: 100px;
+        border: none;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+    }
+    
+    .star-1 {
+        position: absolute;
+        top: 20%;
+        left: 20%;
+        width: 25px;
+        height: auto;
+        filter: drop-shadow(0 0 0 #fffdef);
+        z-index: -5;
+        transition: all 0.8s cubic-bezier(0.05, 0.83, 0.43, 0.96);
+    }
+    
+    .star-2 {
+        position: absolute;
+        top: 45%;
+        left: 45%;
+        width: 15px;
+        height: auto;
+        filter: drop-shadow(0 0 0 #fffdef);
+        z-index: -5;
+        transition: all 0.8s cubic-bezier(0, 0.4, 0, 1.01);
+    }
+    
+    .star-3 {
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        width: 5px;
+        height: auto;
+        filter: drop-shadow(0 0 0 #fffdef);
+        z-index: -5;
+        transition: all 0.8s cubic-bezier(0, 0.4, 0, 1.01);
+    }
+    
+    .star-4 {
+        position: absolute;
+        top: 20%;
+        left: 40%;
+        width: 8px;
+        height: auto;
+        filter: drop-shadow(0 0 0 #fffdef);
+        z-index: -5;
+        transition: all 0.8s cubic-bezier(0, 0.4, 0, 1.01);
+    }
+    
+    .star-5 {
+        position: absolute;
+        top: 25%;
+        left: 45%;
+        width: 15px;
+        height: auto;
+        filter: drop-shadow(0 0 0 #fffdef);
+        z-index: -5;
+        transition: all 0.8s cubic-bezier(0, 0.4, 0, 1.01);
+    }
+    
+    .star-6 {
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        width: 5px;
+        height: auto;
+        filter: drop-shadow(0 0 0 #fffdef);
+        z-index: -5;
+        transition: all 0.8s cubic-bezier(0, 0.4, 0, 1.01);
+    }
+    
+    .button:hover {
+        background: #000000;
+        color: #ffffff;
+        box-shadow: 0 0 80px #ffffff8c;
+    }
+    
+    .button:hover .star-1 {
+        position: absolute;
+        top: -20%;
+        left: -20%;
+        width: 20px;
+        height: auto;
+        filter: drop-shadow(0 0 10px #fffdef);
+        z-index: 2;
+    }
+    
+    .button:hover .star-2 {
+        position: absolute;
+        top: 35%;
+        left: -25%;
+        width: 15px;
+        height: auto;
+        filter: drop-shadow(0 0 10px #fffdef);
+        z-index: 2;
+    }
+    
+    .button:hover .star-3 {
+        position: absolute;
+        top: 80%;
+        left: -10%;
+        width: 10px;
+        height: auto;
+        filter: drop-shadow(0 0 10px #fffdef);
+        z-index: 2;
+    }
+    
+    .button:hover .star-4 {
+        position: absolute;
+        top: -25%;
+        left: 105%;
+        width: 20px;
+        height: auto;
+        filter: drop-shadow(0 0 10px #fffdef);
+        z-index: 2;
+    }
+    
+    .button:hover .star-5 {
+        position: absolute;
+        top: 30%;
+        left: 115%;
+        width: 15px;
+        height: auto;
+        filter: drop-shadow(0 0 10px #fffdef);
+        z-index: 2;
+    }
+    
+    .button:hover .star-6 {
+        position: absolute;
+        top: 80%;
+        left: 105%;
+        width: 10px;
+        height: auto;
+        filter: drop-shadow(0 0 10px #fffdef);
+        z-index: 2;
+    }
+    
+    .fil0 {
+        fill: #fffdef;
+    }
+
+/*FIN CAROUSEL HOME*/
+/* FOOTER DE REDES DEL HOME */
+
+.footer1 > div {
+    display: grid;
+    grid-template-columns: repeat(3, 4fr);
+    gap: 3px;
+    grid-template-areas: "footer1 footer2 footer3";
+    text-align: center;
+    padding-top: 15px;
+}
+
+.div1, .div2, .div3 {
+    grid-area: footer1 footer2 footer3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    font-family: 'Rubik Mono One', monospace;
+}
+
+.Tiktokpageicon, .Instagramicon, .Tiktokpersonalicon {
+    width: 80px;
+    height: auto;
+}
+
+@media only screen and (max-width: 480px) {
+    .Tiktokpageicon, .Instagramicon, .Tiktokpersonalicon {
+        width: 40%;
+        height: auto;
+    }
+
+    .div1, .div2, .div3 {
+        grid-area: footer1 footer2 footer3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        font-family: 'Rubik Mono One', monospace;
+        font-size: 14px;
+    }
+}    
+/*FIN FOOTER*/

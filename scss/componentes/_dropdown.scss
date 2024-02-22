@@ -1,0 +1,142 @@
+/*SEE ALL FOTOS*/
+
+.see-all {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+    margin: 5%;
+}
+
+.see-all img {
+    width: 100%;
+    height: auto;
+    border: 5px solid #696969;
+}
+
+@media only screen and (max-width: 1500px) {
+    .see-all {
+        gap: 40px;
+        margin: 2%;
+    }
+
+    .see-all img {
+        border: 3px solid #696969;
+    }
+}
+
+@media only screen and (max-width: 710px) {
+    .see-all {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        margin: 2%;
+        margin-top: 5%;
+    }
+
+    .see-all img {
+        border: 3px solid #696969;
+    }
+}
+
+/* SEE ALL HOVER CARD IMAGENES */
+
+.card {
+    width: 500px;
+    border-radius: 8px;
+    position: relative;
+    cursor: pointer;
+}
+.card .image-box {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+.card .image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 90% 90%;
+    border-radius: inherit;
+    transition: 0.5s ease-in-out;
+}
+
+.card::after {
+    content: "";
+    inset: 0;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: inherit;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+}
+
+.card:hover img {
+    filter: grayscale(1) brightness(0.4);
+}
+.card:hover::after {
+    opacity: 3;
+    inset: 20px;
+}
+
+.content {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.content h2,
+.content a {
+    opacity: 0;
+    transition: 0.4s 0.2s ease;
+}
+.content h2 {
+    margin-bottom: 12px;
+    transform: scale(0.7); 
+}
+.content a {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #dacece;
+    transform: translateY(50%);
+}
+
+.content a:hover {
+    text-decoration: none;
+    color: #000000;
+}
+.card:hover .content h2 {
+    transform: scale(1);
+    opacity: 1;
+    color: rgba(255, 255, 255, 0.747);
+}
+.card:hover .content a {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
+
+/* MEDIA QUERIES DE LOS CARD HOVER */
+
+@media (max-width: 1580px) {
+    .card {
+        width: 100%; 
+    }
+}
+
+
+@media (max-width: 900px) {
+    .card {
+        width: 95%; 
+    }
+
+    .content a {
+        font-size: 15px;
+    }
+
+    .content h2 {
+        font-size: 20px;
+    }
+}
+

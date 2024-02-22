@@ -478,6 +478,17 @@
         border: 5px solid #696969;
     }
 
+    @media only screen and (max-width: 1500px) {
+        .see-all {
+            gap: 40px;
+            margin: 2%;
+        }
+
+        .see-all img {
+            border: 3px solid #696969;
+        }
+    }
+
     @media only screen and (max-width: 710px) {
         .see-all {
             display: grid;
@@ -555,6 +566,11 @@
         color: #dacece;
         transform: translateY(50%);
     }
+
+    a:hover {
+        text-decoration: none;
+        color: #c20000;
+    }
     .card:hover .content h2 {
         transform: scale(1);
         opacity: 1;
@@ -565,6 +581,36 @@
         transform: translateY(0);
         visibility: visible;
     }
+
+/* MEDIA QUERIES DE LOS CARD HOVER */
+    
+    @media (max-width: 1560px) {
+        .card {
+            width: 100%; 
+        }
+    }
+
+
+    @media (max-width: 900px) {
+        .card {
+            width: 80%; 
+        }
+
+        .content a {
+            font-size: 10px;
+        }
+
+        .content h2 {
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width: 720px) {
+        .card {
+            width: 0%;
+        }
+    }
+
 
 /* CONTACT INFO */
 

@@ -8,8 +8,7 @@
 /*FONDO DE LA PAGINA*/
     body {
         background: linear-gradient(43deg, #ffb335, #ffb436, #f5d3ff, #ffac74);
-        background-size: 800% 800%;
-    
+        background-size: 800% 800%;  
         -webkit-animation: AnimationName 27s ease infinite;
         -moz-animation: AnimationName 27s ease infinite;
         animation: AnimationName 27s ease infinite;
@@ -30,6 +29,7 @@
         50%{background-position:88% 100%}
         100%{background-position:13% 0%}
     }
+
 
 /* CLOSEABLE ITEM LIST */
 
@@ -608,195 +608,159 @@
 
 /* CONTACT INFO */
 
-    .section1 {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: 70px 800px 70px 700px;
-        grid-template-areas:
-        "h11"
-        "personal"
-        "h1"
-        "pagina"
+    .login-box{
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        width: 400px;
+        padding: 40px;
+        transform: translate(-50%,-50%);
+        background: rgba(0, 0, 0, 0.5);
+        box-sizing: border-box;
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+        border-radius: 10px;
     }
 
-/* MEDIA PARA MOBILE QUE AJUSTA LOS ELEMENTOS DE CONTACT */
-    @media only screen and (max-width: 450px) {
-        .section1 {
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: 120px 600px 50px 600px;
-            grid-template-areas:
-            "h11"
-            "personal"
-            "h1"
-            "pagina"
-        }
-    }
-/* FIN MEDIA */
-
-    .tiktok1 {
-        grid-area: h11;
-        color: #2c3237;
+    textarea {
+        background-color: rgba(255, 231, 186, 0.212);
+        border-radius: 20px;
+        border: none;
+        outline: none;
+        font-family: sans-serif;
         text-align: center;
-        font-size: 40px;
-        font-family: 'Bangers', system-ui;
         font-style: italic;
     }
-
-    .personal {
-        grid-area: personal;
-        width: 500px;
-        height: auto;
-        transition: transform 0.8s ease, box-shadow 0.8s ease;
-    }
-    
-    .personal {
-        box-shadow: 2px 2px 10px 10px rgb(255, 107, 107);
-        animation: cambiar-color 5s infinite linear;
-    }
-    
-/* KEYFRAMES PARA EL BOXSHADOW DE COLORES */
-    @keyframes cambiar-color {
-        0% {
-            box-shadow: 2px 2px 10px 10px rgb(255, 142, 49);
-        }
-        25% {
-            box-shadow: 2px 2px 10px 10px rgba(255, 249, 190, 0.993);
-        }
-        50% {
-            box-shadow: 2px 2px 10px 10px rgb(255, 152, 111);
-        }
-        75% {
-            box-shadow: 2px 2px 10px 10px rgb(255, 255, 255);
-        }
-        100% {
-            box-shadow: 2px 2px 10px 10px rgb(247, 187, 255);
-        }
-    }
-/* KEYFRAMES FIN */
-    
-    .tiktok2 {
-        grid-area: h1;
-        color: #2c3237;
+    .login-box h2{
+        margin: 0 0 30px;
+        padding: 0;
+        color: #fff;
         text-align: center;
-        font-size: 40px;
-        font-family: 'Bangers', system-ui;
-        font-style: italic;
     }
-
-    .pagina {
-        grid-area: pagina;
-        width: 500px;
-        height: auto;
-        transition: transform 0.8s ease, box-shadow 0.8s ease;
-    }
-
-
-    .pagina {
-        box-shadow: 2px 2px 10px 10px rgb(255, 107, 107);
-        animation: cambiar-color 5s infinite linear;
-    }
-/* BOTONES IG Y DISCORD */
-    .Button1 {
-        --glow-color: rgb(217, 176, 255);
-        --glow-spread-color: rgba(191, 123, 255, 0.781);
-        --enhanced-glow-color: rgb(231, 206, 255);
-        --btn-color: rgb(100, 61, 136);
-        border: .25em solid var(--glow-color);
-        padding: 1em 3em;
-        color: var(--glow-color);
-        font-size: 15px;
-        font-weight: bold;
-        background-color: var(--btn-color);
-        border-radius: 1em;
-        outline: none;
-        box-shadow: 0 0 1em .25em var(--glow-color),
-            0 0 4em 1em var(--glow-spread-color),
-            inset 0 0 .75em .25em var(--glow-color);
-        text-shadow: 0 0 .5em var(--glow-color);
+    .login-box .user-box{
         position: relative;
-        margin-top: 30px;
-        transition: all 0.3s;
     }
-    
-    .Button2 {
-        --glow-color: rgb(22, 89, 167);
-        --glow-spread-color: rgba(63, 104, 179, 0.781);
-        --enhanced-glow-color: rgb(48, 75, 148);
-        --btn-color: rgb(70, 141, 189);
-        border: .25em solid var(--glow-color);
-        padding: 1em 3em;
-        color: var(--glow-color);
-        font-size: 15px;
-        font-weight: bold;
-        background-color: var(--btn-color);
-        border-radius: 1em;
+    .login-box .user-box input{
+        width: 100%;
+        padding: 10px 0;
+        font-size: 16px;
+        color: #e2cdcdea;
+        margin-bottom: 30px;
+        border: none;
+        border-bottom: 1px solid #ffffff;
         outline: none;
-        box-shadow: 0 0 1em .25em var(--glow-color),
-            0 0 4em 1em var(--glow-spread-color),
-            inset 0 0 .75em .25em var(--glow-color);
-        text-shadow: 0 0 .5em var(--glow-color);
+        background: transparent;
+    }
+    .login-box .user-box label{
+        position: absolute;
+        top: -40px;
+        left: 0;
+        padding: 10px 0;
+        font-size: 16px;
+        color: #00fff2;
+        pointer-events: none;
+        transition: .5s;
+    }
+    .login-box .user-box input:focus ~ label,
+    .login-box .user-box input:valid ~ label{
+        top: -20px;
+        left: 0;
+        color: #03e9f4;
+        font-size: 12px;
+    }
+    .login-box form a{
         position: relative;
-        margin-top: 30px;
-        transition: all 0.3s;
+        display: inline-block;
+        padding: 10px 20px;
+        color: #03e9f4;
+        font-size: 16px;
+        text-decoration: none;
+        text-transform: uppercase;
+        overflow: hidden;
+        transition: .5s;
+        margin-top: 40px;
+        letter-spacing: 4px;
     }
-
-    .Button2::after {
-        pointer-events: none;
-        content: "";
+    .login-box a:hover{
+        background: #03e9f4;
+        color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 5px #00f5fd,
+                    0 0 25px #03e9f4,
+                    0 0 50px #03e9f4,
+                    0 0 100px #03e9f4;
+    }
+    .login-box a span{
         position: absolute;
-        top: 120%;
-        left: 0;
-        height: 100%;
+        display: block;
+    }
+    .login-box a span:nth-child(1){
+        top: 0;
+        left: -100%;
+        height: 2px;
         width: 100%;
-        background-color: var(--glow-spread-color);
-        filter: blur(2em);
-        opacity: .7;
-        transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+        background: linear-gradient(90deg,transparent,#03e9f4);
+        animation: btn-anim1 1s linear infinite;
+    }
+    @keyframes btn-anim1{
+        0%{
+            left: -100%;
+        }
+        50%,100%{
+            left: 100%;
+        }
+    }
+    .login-box a span:nth-child(2){
+        top: -100%;
+        right: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(180deg,transparent,#03e9f4);
+        animation: btn-anim2 1s linear infinite;
+        animation-delay: .25s;
+    }
+    @keyframes btn-anim2{
+        0%{
+            top: -100%;
+        }
+        50%,100%{
+            top: 100%;
+        }
+    }
+    .login-box a span:nth-child(3){
+        bottom: 0;
+        right: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(270deg,transparent,#03e9f4);
+        animation: btn-anim3 1s linear infinite;
+        animation-delay: .5s;
+    }
+    @keyframes btn-anim3{
+        0%{
+            right: -100%;
+        }
+        50%,100%{
+            right: 100%;
+        }
+    }
+    .login-box a span:nth-child(4){
+        bottom: -100%;
+        left: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(360deg,transparent,#03e9f4);
+        animation: btn-anim4 1s linear infinite;
+        animation-delay: .75s;
+    }
+    @keyframes btn-anim4{
+        0%{
+            bottom: -100%;
+        }
+        50%,100%{
+            bottom: 100% ;
+        }
     }
 
-    .Button2:hover {
-        color: var(--btn-color);
-        background-color: var(--glow-color);
-        box-shadow: 0 0 1em .25em var(--glow-color),
-            0 0 4em 2em var(--glow-spread-color),
-            inset 0 0 .75em .25em var(--glow-color);
-    }
-    
-    .Button2:active {
-        box-shadow: 0 0 0.6em .25em var(--glow-color),
-            0 0 2.5em 2em var(--glow-spread-color),
-            inset 0 0 .5em .25em var(--glow-color);
-    }
-
-    .Button1::after {
-        pointer-events: none;
-        content: "";
-        position: absolute;
-        top: 120%;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        background-color: var(--glow-spread-color);
-        filter: blur(2em);
-        opacity: .7;
-        transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
-    }
-    
-    .Button1:hover {
-        color: var(--btn-color);
-        background-color: var(--glow-color);
-        box-shadow: 0 0 1em .25em var(--glow-color),
-            0 0 4em 2em var(--glow-spread-color),
-            inset 0 0 .75em .25em var(--glow-color);
-    }
-    
-    .Button1:active {
-        box-shadow: 0 0 0.6em .25em var(--glow-color),
-            0 0 2.5em 2em var(--glow-spread-color),
-            inset 0 0 .5em .25em var(--glow-color);
-    }
-/* FIN BOTONES IG Y DISCORD*/
 /* MOST WANTED */
     .tmw {
         font-family: 'Merriweather Sans', sans-serif;

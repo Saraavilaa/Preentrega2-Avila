@@ -493,9 +493,9 @@
         .see-all {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 50px;
+            gap: 40px;
             margin: 2%;
-            margin-top: 10%;
+            margin-top: 5%;
         }
 
         .see-all img {
@@ -584,7 +584,7 @@
 
 /* MEDIA QUERIES DE LOS CARD HOVER */
     
-    @media (max-width: 1560px) {
+    @media (max-width: 1580px) {
         .card {
             width: 100%; 
         }
@@ -593,21 +593,15 @@
 
     @media (max-width: 900px) {
         .card {
-            width: 80%; 
+            width: 95%; 
         }
 
         .content a {
-            font-size: 10px;
+            font-size: 15px;
         }
 
         .content h2 {
             font-size: 20px;
-        }
-    }
-
-    @media (max-width: 720px) {
-        .card {
-            width: 0%;
         }
     }
 

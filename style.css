@@ -569,7 +569,7 @@
 
     a:hover {
         text-decoration: none;
-        color: #c20000;
+        color: #000000;
     }
     .card:hover .content h2 {
         transform: scale(1);
@@ -731,6 +731,103 @@
     .contact__submit-button:hover{
         background-color: #2e2e2e;
     }
+/* FIN CONTACT INFO */
+
+
+/* REDES SOCIALES SLIDER */
+
+.redestitle {
+    text-align: center;
+    margin-top: 80px;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    text-shadow: #000000;
+}
+.redescontainer__slider{
+    max-width: 1000px;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+}
+
+input[type=radio]{
+    display: none;
+}
+
+.redescontainer{
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+    max-height: 600px;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redescards{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.redescard{
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.redesimg{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+
+#item-2:checked ~ .redescards #selector-1,
+#item-1:checked ~ .redescards #selector-3,
+#item-3:checked ~ .redescards #selector-2{
+    transform: translateX(-40%) scale(0.8);
+    opacity: 0.6;
+    z-index: 0;
+}
+
+#item-3:checked ~ .redescards #selector-1,
+#item-1:checked ~ .redescards #selector-2,
+#item-2:checked ~ .redescards #selector-3{
+    transform: translateX(40%) scale(0.8);
+    opacity: 0.6;
+    z-index: 0;
+}
+
+#item-1:checked ~ .redescards #selector-1,
+#item-2:checked ~ .redescards #selector-2,
+#item-3:checked ~ .redescards #selector-3{
+    transform: translateX(0) scale(1);
+    z-index: 1;
+}
+
+/* FIN REDES SOCIALES SLIDER */
+
 
 /* MOST WANTED */
     .tmw {

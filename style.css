@@ -567,7 +567,7 @@
         transform: translateY(50%);
     }
 
-    a:hover {
+    .content a:hover {
         text-decoration: none;
         color: #c20000;
     }
@@ -808,7 +808,6 @@
         font-style: italic;
     }
 
-    
     .espejoasimetrico {
         font-family: 'Merriweather Sans', sans-serif;
         font-style: italic;
@@ -948,3 +947,9 @@
         background-color: #ffee00;
       }
 /* FIN BOTONES DE TODAS LAS FOTOS */
+
+/* MEDIA QUERIES DE MOST WANTED */
+
+    @media only screen and (max-width: 1200px) {
+
+    }

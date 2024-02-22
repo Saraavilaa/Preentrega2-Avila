@@ -460,8 +460,122 @@
         display: flex;
         justify-content: center;
         margin-top: -70px;
+        margin: 10px;
     }
 /* FIN PLAYLIST GIF */
+
+/* BLOG DE PLAYLIST */
+
+    .preguntasfrecuentes {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        color: #61d36aa1;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        font-family: "Archivo Black", sans-serif;
+    }
+
+    .blog{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        }
+        
+        .miniblog1 { grid-area: 1 / 2 / 3 / 3; }
+        .miniblog2 { grid-area: 1 / 4 / 3 / 5; }
+        .miniblog3 { grid-area: 4 / 2 / 6 / 3; }
+        .miniblog4 { grid-area: 4 / 4 / 6 / 5; }
+
+    .cerosnum {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: 40px;
+        color: #37ffbc;
+        margin-bottom: 20px;
+        font-family: "Archivo Black", sans-serif;
+    }
+    
+    .blogtitle {
+        font-family: "Archivo Black";
+        color: gray;
+    }
+
+    .blogtexto {
+        color: #2c3237;
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    .miniblog1 {
+        background-color: rgb(255, 255, 255);
+        border-radius: 20px;
+        box-shadow: 0px 0px 40px 0px rgb(255, 255, 255);
+        text-align: center;
+        padding: 30px 30px 30px 30px;
+    }
+
+    .miniblog2 {
+        background-color: rgb(255, 255, 255);
+        border-radius: 20px;
+        box-shadow: 0px 0px 40px 0px rgb(255, 255, 255);
+        text-align: center;
+        padding: 30px 30px 30px 30px;
+    }
+
+    .miniblog3 {
+        background-color: rgb(255, 255, 255);
+        border-radius: 20px;
+        box-shadow: 0px 0px 40px 0px rgb(255, 255, 255);
+        text-align: center;
+        padding: 30px 30px 30px 30px;
+    }
+
+    .miniblog4{
+        background-color: rgb(255, 255, 255);
+        border-radius: 20px;
+        box-shadow: 0px 0px 40px 0px rgb(255, 255, 255);
+        text-align: center;
+        padding: 30px 30px 30px 30px;
+    }
+
+/* MEDIA QUERIE DEL BLOG */
+    @media only screen and (max-width: 1400px) {
+        .blog {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(8, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+            }
+            
+            .miniblog1 { grid-area: 1 / 2 / 3 / 3; }
+            .miniblog2 { grid-area: 3 / 2 / 5 / 3; }
+            .miniblog3 { grid-area: 5 / 2 / 7 / 3; }
+            .miniblog4 { grid-area: 7 / 2 / 9 / 3; }
+
+        .miniblog1 {
+            max-width: px;
+            min-width: 350px;
+        }
+
+        .cerosnum {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            color: #37ffbc;
+            margin-bottom: 20px;
+            font-family: "Archivo Black", sans-serif;
+        }
+    }
+
+/* FIN MEDIA QUERIE DEL BLOG */
+
+/* FIN BLOG DE PLAYLIST */
 
 /*SEE ALL FOTOS*/
 

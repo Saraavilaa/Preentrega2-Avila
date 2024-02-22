@@ -1,3 +1,4 @@
+/*componentes*/
 @import '../scss/componentes/home';
 @import '../scss/componentes/reset';
 @import '../scss/componentes/background';
@@ -6,3 +7,7 @@
 @import '../scss/componentes/mostwanted';
 @import '../scss/componentes/dropdown';
 @import '../scss/componentes/contact';
+
+/*base*/
+@import '../scss/base/variables';
+@import '../base/extends';

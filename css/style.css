@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*componentes*/
 /*LOS TEXTOS DE EL HOME*/
 header {
   background-color: none;
@@ -446,6 +447,7 @@ body {
     content: "👀";
   }
 }
+/* PLAYLIST MINI BLOG */
 /* PLAYLIST TEXTO */
 .playlist {
   display: flex;
@@ -522,14 +524,6 @@ body {
   margin-top: 20px;
 }
 
-.miniblog1 {
-  background-color: rgb(255, 255, 255);
-  border-radius: 20px;
-  box-shadow: 0px 0px 40px 0px rgb(255, 255, 255);
-  text-align: center;
-  padding: 30px 30px 30px 30px;
-}
-
 .miniblog2 {
   background-color: rgb(255, 255, 255);
   border-radius: 20px;
@@ -589,7 +583,6 @@ body {
     font-family: "Archivo Black", sans-serif;
   }
 }
-/* FIN MEDIA QUERIE DEL BLOG */
 /* FIN BLOG DE PLAYLIST */
 /* MOST WANTED */
 .tmw {
@@ -1114,5 +1107,6 @@ input[type=radio] {
 }
 
 /* FIN REDES SOCIALES SLIDER */
+/*base*/
 
 /*# sourceMappingURL=style.css.map */

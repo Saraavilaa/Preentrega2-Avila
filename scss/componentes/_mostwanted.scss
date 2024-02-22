@@ -1,8 +1,10 @@
+@import '../base/variables';
+
 /* MOST WANTED */
 .tmw {
     font-family: 'Merriweather Sans', sans-serif;
     font-size: 30px;
-    color: #2c3237;
+    color: $color_2;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 40px;

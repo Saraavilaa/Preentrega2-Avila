@@ -1,8 +1,5 @@
 @import '../base/variables';
 @import '../base/extends';
-
-
-
 /* PLAYLIST TEXTO */
 .playlist {
     display: flex;
@@ -101,7 +98,7 @@
         .miniblog4 { grid-area: 7 / 2 / 9 / 3; }
 
     .miniblog1 {
-        max-width: px;
+        max-width: 100px;
         min-width: 350px;
     }
 

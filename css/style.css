@@ -1,36 +1,20 @@
 @charset "UTF-8";
 /*componentes*/
+/* VARIABLES GENERALES */
 /*LOS TEXTOS DE EL HOME*/
 header {
   background-color: none;
 }
 
 .h22 {
-  font-family: "Merriweather Sans", sans-serif;
-  color: #2c3237;
-  justify-content: center;
-  text-align: center;
   font-size: 25px;
   margin-top: 15px;
 }
 
 .h2 {
-  font-family: "Merriweather Sans", sans-serif;
-  color: #2c3237;
-  display: flex;
-  justify-content: center;
-  text-align: center;
   margin-top: 50px;
   font-size: 40px;
   font-style: italic;
-}
-
-.h3 {
-  font-family: "Merriweather Sans", sans-serif;
-  color: #2c3237;
-  display: flex;
-  justify-content: center;
-  text-align: center;
 }
 
 /* LOS A TAMBIEN CAMBIAN LOS ENLACES DE HOME Y PLAYLIST */
@@ -328,6 +312,7 @@ body {
     background-position: 13% 0%;
   }
 }
+/* VARIABLES GENERALES */
 /* CLOSEABLE ITEM LIST */
 .closeableul {
   list-style-type: none;
@@ -447,7 +432,39 @@ body {
     content: "👀";
   }
 }
+/* VARIABLES GENERALES */
 /* PLAYLIST MINI BLOG */
+.miniblog4, .miniblog3, .miniblog2, .miniblog1 {
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  box-shadow: 0px 0px 40px 0px rgb(255, 255, 255);
+  text-align: center;
+  padding: 30px 30px 30px 30px;
+}
+
+/* CONTACT INPUT */
+.contact__input--textarea, .contact__input {
+  height: 30px;
+  outline: none;
+  padding: 5px 0;
+  border-bottom: 2px solid #121212;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 100%;
+  color: #121212;
+  background-color: transparent;
+}
+
+/* HOME H*/
+.h22, .h2, .h3 {
+  font-family: "Merriweather Sans", sans-serif;
+  color: #2c3237;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
 /* PLAYLIST TEXTO */
 .playlist {
   display: flex;
@@ -473,7 +490,7 @@ body {
   display: flex;
   justify-content: center;
   text-align: center;
-  color: rgba(97, 211, 106, 0.631372549);
+  color: rgba(107, 107, 107, 0.8274509804);
   margin-top: 40px;
   margin-bottom: 40px;
   font-family: "Archivo Black", sans-serif;
@@ -524,30 +541,6 @@ body {
   margin-top: 20px;
 }
 
-.miniblog2 {
-  background-color: rgb(255, 255, 255);
-  border-radius: 20px;
-  box-shadow: 0px 0px 40px 0px rgb(255, 255, 255);
-  text-align: center;
-  padding: 30px 30px 30px 30px;
-}
-
-.miniblog3 {
-  background-color: rgb(255, 255, 255);
-  border-radius: 20px;
-  box-shadow: 0px 0px 40px 0px rgb(255, 255, 255);
-  text-align: center;
-  padding: 30px 30px 30px 30px;
-}
-
-.miniblog4 {
-  background-color: rgb(255, 255, 255);
-  border-radius: 20px;
-  box-shadow: 0px 0px 40px 0px rgb(255, 255, 255);
-  text-align: center;
-  padding: 30px 30px 30px 30px;
-}
-
 /* MEDIA QUERIE DEL BLOG */
 @media only screen and (max-width: 1400px) {
   .blog {
@@ -570,25 +563,21 @@ body {
     grid-area: 7/2/9/3;
   }
   .miniblog1 {
-    max-width: px;
+    max-width: 100px;
     min-width: 350px;
   }
   .cerosnum {
-    display: flex;
     justify-content: center;
-    align-items: center;
     font-size: 30px;
-    color: #37ffbc;
-    margin-bottom: 20px;
-    font-family: "Archivo Black", sans-serif;
   }
 }
 /* FIN BLOG DE PLAYLIST */
+/* VARIABLES GENERALES */
 /* MOST WANTED */
 .tmw {
   font-family: "Merriweather Sans", sans-serif;
   font-size: 30px;
-  color: #2c3237;
+  color: black;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 40px;
@@ -605,7 +594,7 @@ body {
 .textoespejoasimetrico {
   font-family: "Bangers", system-ui;
   font-size: 20px;
-  border: 4px solid grey;
+  border: 4px solid #696969;
 }
 
 .imagenesvacias {
@@ -645,7 +634,7 @@ body {
   height: 100%;
   background-size: cover;
   animation: changeImage 8s infinite;
-  border: 8px solid rgb(78, 78, 78);
+  border: 8px solid #696969;
 }
 
 .d-grid {
@@ -653,20 +642,16 @@ body {
   justify-content: center;
 }
 
-/* BOTONES DE TODAS LAS FOTOS */
-.example-2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 45px;
-}
-
 /* BOTONES DEL ESPEJO */
 .example2-0 {
   margin-right: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* FIN BOTONES DEL ESPEJO */
+/* BOTONES CONFIG GENERAL */
 .example-2 .icon-content {
   margin: 0px 10px;
   margin-bottom: -70px;
@@ -757,6 +742,7 @@ body {
 }
 
 /* FIN BOTONES DE TODAS LAS FOTOS */
+/* VARIABLES GENERALES */
 /*SEE ALL FOTOS*/
 .see-all {
   display: grid;
@@ -868,7 +854,7 @@ body {
 .card:hover .content h2 {
   transform: scale(1);
   opacity: 1;
-  color: rgba(255, 255, 255, 0.747);
+  color: #dacece;
 }
 
 .card:hover .content a {
@@ -894,6 +880,7 @@ body {
     font-size: 20px;
   }
 }
+/* VARIABLES GENERALES */
 /* CONTACT INFO */
 .contact {
   height: 100%;
@@ -972,31 +959,9 @@ body {
   font-weight: 600;
 }
 
-.contact__input {
-  height: 30px;
-  outline: none;
-  padding: 5px 0;
-  border-bottom: 2px solid #121212;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  width: 100%;
-  color: #121212;
-  background-color: transparent;
-}
-
 .contact__input--textarea {
   height: 100px;
-  outline: none;
-  padding: 5px 0;
-  border-bottom: 2px solid #121212;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  width: 100%;
-  color: #121212;
   resize: none;
-  background-color: transparent;
 }
 
 .contact__submit-button {
@@ -1108,5 +1073,37 @@ input[type=radio] {
 
 /* FIN REDES SOCIALES SLIDER */
 /*base*/
+/* VARIABLES GENERALES */
+/* PLAYLIST MINI BLOG */
+.miniblog1, .miniblog2, .miniblog3, .miniblog4 {
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  box-shadow: 0px 0px 40px 0px rgb(255, 255, 255);
+  text-align: center;
+  padding: 30px 30px 30px 30px;
+}
+
+/* CONTACT INPUT */
+.contact__input, .contact__input--textarea {
+  height: 30px;
+  outline: none;
+  padding: 5px 0;
+  border-bottom: 2px solid #121212;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 100%;
+  color: #121212;
+  background-color: transparent;
+}
+
+/* HOME H*/
+.h22, .h2, .h3 {
+  font-family: "Merriweather Sans", sans-serif;
+  color: #2c3237;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
 
 /*# sourceMappingURL=style.css.map */

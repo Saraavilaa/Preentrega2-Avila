@@ -1,38 +1,28 @@
 @import '../base/variables';
-
+@import '../base/mapas';
 /*LOS TEXTOS DE EL HOME*/
 header {
     background-color: none;
     }
 
     .h22 {
-        font-family: 'Merriweather Sans', sans-serif;
-        color: #2c3237;
-        justify-content: center;
-        text-align: center;
         font-size: 25px;
         margin-top: 15px;
+        @extend %homeh;
     }
 
 
     .h2 {
-        font-family: 'Merriweather Sans', sans-serif;
-        color: #2c3237;
-        display: flex;
-        justify-content: center;
-        text-align: center;
         margin-top: 50px;
         font-size: 40px;
         font-style: italic;
+        @extend %homeh;
     }
 
     .h3 {
-        font-family: 'Merriweather Sans', sans-serif;
-        color: #2c3237;
-        display: flex;
-        justify-content: center;
-        text-align: center;
+        @extend %homeh;
     }
+
 /* LOS A TAMBIEN CAMBIAN LOS ENLACES DE HOME Y PLAYLIST */
 a {
     color: gray;

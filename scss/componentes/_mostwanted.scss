@@ -1,5 +1,5 @@
 @import '../base/variables';
-
+@import '../base/mapas';
 /* MOST WANTED */
 .tmw {
     font-family: 'Merriweather Sans', sans-serif;
@@ -22,7 +22,7 @@
 .textoespejoasimetrico {
     font-family: 'Bangers', system-ui;
     font-size: 20px;
-    border: 4px solid grey;
+    border: 4px solid $colorborder;
 }
 .imagenesvacias {
     display: flex;
@@ -52,7 +52,7 @@
     height: 100%;
     background-size: cover;
     animation: changeImage 8s infinite;
-    border: 8px solid rgb(78, 78, 78);
+    border: 8px solid $colorborder;
 }
 
 .d-grid {
@@ -61,18 +61,15 @@
 }
 
 
-/* BOTONES DE TODAS LAS FOTOS */
-  .example-2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 45px;
-  }
 /* BOTONES DEL ESPEJO */
   .example2-0 {
     margin-right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 /* FIN BOTONES DEL ESPEJO */
+/* BOTONES CONFIG GENERAL */
   .example-2 .icon-content {
     margin: 0px 10px;
     margin-bottom: -70px;

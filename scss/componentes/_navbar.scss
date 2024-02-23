@@ -1,5 +1,5 @@
 @import '../base/variables';
-
+@import '../base/mapas';
 /* CLOSEABLE ITEM LIST */
 
 .closeableul {
@@ -11,7 +11,7 @@
 .closeableul li {
     border: 1px solid none;
     margin-top: -1px;
-    background-color: #f3eae8;
+    background-color: map-get($navbar , background-color-closeables );
     padding: 12px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
@@ -22,7 +22,7 @@
 }
 
 .closeableul li:hover {
-    background-color: #f3eae8;
+    background-color: map-get($navbar , background-color-closeables );
 }
 
 .close {
@@ -34,7 +34,8 @@
     transform: translate(0%, -50%);
 }
 
-.close:hover {background:#f3eae8;}
+.close:hover {background: map-get($navbar , background-color-closeables );
+}
 
 /* FIN CLOSEABLE */
 
@@ -51,8 +52,8 @@
 }
 
 .lista {
-    border-top: 1px solid #353e46;
-    border-bottom: 1px solid #353e46;
+    border-top: map-get($navbar , bordes );
+    border-bottom: map-get($navbar, bordes );
     font-weight: bold;
     font-size: 17px;
     font-family: 'Merriweather Sans', sans-serif;

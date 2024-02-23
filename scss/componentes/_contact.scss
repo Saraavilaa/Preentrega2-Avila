@@ -1,5 +1,5 @@
 @import '../base/variables';
-
+@import '../base/mapas';
 /* CONTACT INFO */
 
 .contact{
@@ -48,7 +48,7 @@
 /* MEDIA QUERIES DE EL TITULO DE CONTACTO Y IMAGEN */
 
 @media (max-width: 1000px) {
-.contact__title{
+    .contact__title{
         font-size: 60px;
     }
 }
@@ -85,30 +85,13 @@
 }
 
 .contact__input{
-    height: 30px;
-    outline: none;
-    padding: 5px 0;
-    border-bottom: 2px solid #121212;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    width: 100%;
-    color: #121212;
-    background-color: transparent;
+    @extend %contactinput
 }
 
 .contact__input--textarea{
     height: 100px;
-    outline: none;
-    padding: 5px 0;
-    border-bottom: 2px solid #121212;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    width: 100%;
-    color: #121212;
     resize: none;
-    background-color: transparent;
+    @extend %contactinput
 }
 
 .contact__submit-button{

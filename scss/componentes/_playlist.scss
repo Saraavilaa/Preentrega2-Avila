@@ -1,6 +1,8 @@
 @import '../base/variables';
 @import '../base/extends';
 
+
+
 /* PLAYLIST TEXTO */
 .playlist {
     display: flex;
@@ -27,7 +29,7 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    color: #61d36aa1;
+    color: #000000d3;
     margin-top: 40px;
     margin-bottom: 40px;
     font-family: "Archivo Black", sans-serif;
@@ -81,7 +83,7 @@
 
 .miniblog4{
     @extend %miniblogs;
-}
+} 
 
 /* MEDIA QUERIE DEL BLOG */
 @media only screen and (max-width: 1400px) {

@@ -1,0 +1,14 @@
+@mixin mixin1($color, $marginbottom, $font-family) {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: $font-family;
+    color: $color;
+    margin-bottom: $marginbottom;
+}
+
+/* BLOG */
+@mixin mediaqblog() {
+    max-width: 500px;
+    min-width: 350px;
+}

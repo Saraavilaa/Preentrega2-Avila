@@ -465,14 +465,14 @@ body {
   text-align: center;
 }
 
+/* BLOG */
 /* PLAYLIST TEXTO */
 .playlist {
   display: flex;
   justify-content: center;
   text-align: center;
-  font-family: "Merriweather Sans", sans-serif;
+  font-family: "Merriweather Sans";
   color: #2c3237;
-  margin-top: 40px;
   margin-bottom: 30px;
 }
 
@@ -490,10 +490,9 @@ body {
   display: flex;
   justify-content: center;
   text-align: center;
+  font-family: "Archivo Black";
   color: rgba(107, 107, 107, 0.8274509804);
-  margin-top: 40px;
   margin-bottom: 40px;
-  font-family: "Archivo Black", sans-serif;
 }
 
 .blog {
@@ -523,9 +522,8 @@ body {
 .cerosnum {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
   font-size: 40px;
-  color: #37ffbc;
+  color: #37f7b7;
   margin-bottom: 20px;
   font-family: "Archivo Black", sans-serif;
 }
@@ -563,7 +561,19 @@ body {
     grid-area: 7/2/9/3;
   }
   .miniblog1 {
-    max-width: 100px;
+    max-width: 500px;
+    min-width: 350px;
+  }
+  .miniblog2 {
+    max-width: 500px;
+    min-width: 350px;
+  }
+  .miniblog3 {
+    max-width: 500px;
+    min-width: 350px;
+  }
+  .miniblog4 {
+    max-width: 500px;
     min-width: 350px;
   }
   .cerosnum {
@@ -1105,5 +1115,7 @@ input[type=radio] {
   justify-content: center;
   text-align: center;
 }
+
+/* BLOG */
 
 /*# sourceMappingURL=style.css.map */

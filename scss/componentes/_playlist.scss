@@ -1,16 +1,11 @@
 @import '../base/variables';
 @import '../base/extends';
 @import '../base/mapas';
+@import '../base/mixins';
 
 /* PLAYLIST TEXTO */
 .playlist {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-family: 'Merriweather Sans', sans-serif;
-    color: #2c3237;
-    margin-top: 40px;
-    margin-bottom: 30px;
+    @include mixin1(#2c3237, 30px, 'Merriweather Sans');
 }
 
 /* PLAYLIST GIF */ 
@@ -25,13 +20,7 @@
 /* BLOG DE PLAYLIST */
 
 .preguntasfrecuentes {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    color: #6b6b6bd3;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    font-family: "Archivo Black", sans-serif;
+    @include mixin1(#6b6b6bd3, 40px, "Archivo Black");
 }
 
 .blog{
@@ -50,9 +39,8 @@
 .cerosnum {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
     font-size: 40px;
-    color: #37ffbc;
+    color: #37f7b7;
     margin-bottom: 20px;
     font-family: "Archivo Black", sans-serif;
 }
@@ -80,7 +68,7 @@
     @extend %miniblogs;
 }
 
-.miniblog4{
+.miniblog4 {
     @extend %miniblogs;
 } 
 
@@ -100,8 +88,16 @@
         .miniblog4 { grid-area: 7 / 2 / 9 / 3; }
 
     .miniblog1 {
-        max-width: 100px;
-        min-width: 350px;
+        @include mediaqblog;
+    }
+    .miniblog2 {
+        @include mediaqblog;
+    }
+    .miniblog3 {
+        @include mediaqblog;
+    }
+    .miniblog4 {
+        @include mediaqblog;
     }
 
     .cerosnum {

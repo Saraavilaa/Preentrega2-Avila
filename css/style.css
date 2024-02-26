@@ -13,7 +13,7 @@
 
 /* CONTACT INPUT */
 .contact__input--textarea, .contact__input {
-  height: 30px;
+  height: 70px;
   outline: none;
   padding: 5px 0;
   border-bottom: 2px solid #121212;
@@ -358,7 +358,7 @@ body {
 
 /* CONTACT INPUT */
 .contact__input--textarea, .contact__input {
-  height: 30px;
+  height: 70px;
   outline: none;
   padding: 5px 0;
   border-bottom: 2px solid #121212;
@@ -511,7 +511,7 @@ body {
 
 /* CONTACT INPUT */
 .contact__input--textarea, .contact__input {
-  height: 30px;
+  height: 70px;
   outline: none;
   padding: 5px 0;
   border-bottom: 2px solid #121212;
@@ -661,7 +661,7 @@ body {
 
 /* CONTACT INPUT */
 .contact__input--textarea, .contact__input {
-  height: 30px;
+  height: 70px;
   outline: none;
   padding: 5px 0;
   border-bottom: 2px solid #121212;
@@ -864,7 +864,7 @@ body {
 
 /* CONTACT INPUT */
 .contact__input--textarea, .contact__input {
-  height: 30px;
+  height: 70px;
   outline: none;
   padding: 5px 0;
   border-bottom: 2px solid #121212;
@@ -946,7 +946,6 @@ body {
 .secondcard::after {
   content: "";
   inset: 0;
-  border: 2px solid rgb(255, 255, 255);
   border-radius: inherit;
   opacity: 0;
   transition: 0.4s ease-in-out;
@@ -1035,7 +1034,7 @@ body {
 
 /* CONTACT INPUT */
 .contact__input--textarea, .contact__input {
-  height: 30px;
+  height: 70px;
   outline: none;
   padding: 5px 0;
   border-bottom: 2px solid #121212;
@@ -1261,7 +1260,7 @@ input[type=radio] {
 
 /* CONTACT INPUT */
 .contact__input, .contact__input--textarea {
-  height: 30px;
+  height: 70px;
   outline: none;
   padding: 5px 0;
   border-bottom: 2px solid #121212;

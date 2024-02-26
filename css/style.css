@@ -921,20 +921,20 @@ body {
   }
 }
 /* SEE ALL HOVER CARD IMAGENES */
-.card {
+.secondcard {
   width: 500px;
   border-radius: 8px;
   position: relative;
   cursor: pointer;
 }
 
-.card .image-box {
+.secondcard .image-box {
   width: 100%;
   height: 100%;
   border-radius: inherit;
 }
 
-.card .image-box img {
+.secondcard .image-box img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -943,7 +943,7 @@ body {
   transition: 0.5s ease-in-out;
 }
 
-.card::after {
+.secondcard::after {
   content: "";
   inset: 0;
   border: 2px solid rgb(255, 255, 255);
@@ -952,11 +952,11 @@ body {
   transition: 0.4s ease-in-out;
 }
 
-.card:hover img {
+.secondcard:hover img {
   filter: grayscale(1) brightness(0.4);
 }
 
-.card:hover::after {
+.secondcard:hover::after {
   opacity: 3;
   inset: 20px;
 }
@@ -993,13 +993,13 @@ body {
   color: #000000;
 }
 
-.card:hover .content h2 {
+.secondcard:hover .content h2 {
   transform: scale(1);
   opacity: 1;
   color: #dacece;
 }
 
-.card:hover .content a {
+.secondcard:hover .content a {
   opacity: 1;
   transform: translateY(0);
   visibility: visible;
@@ -1007,12 +1007,12 @@ body {
 
 /* MEDIA QUERIES DE LOS CARD HOVER */
 @media (max-width: 1580px) {
-  .card {
+  .secondcard {
     width: 100%;
   }
 }
 @media (max-width: 900px) {
-  .card {
+  .secondcard {
     width: 95%;
   }
   .content a {

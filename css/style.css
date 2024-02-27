@@ -717,19 +717,19 @@ body {
 /* LAS IMAGENES QUE VAN CAMBIANDO */
 @keyframes changeImage {
   0% {
-    background-image: url("/imagenes/mostwanted/espejoasimetrico.jpg");
+    background-image: url("../imagenes/mostwanted/espejoasimetrico.jpg");
   }
   25% {
-    background-image: url("/imagenes/mostwanted/espejoasimetrico2.jpg");
+    background-image: url("../imagenes/mostwanted/espejoasimetrico2.jpg");
   }
   50% {
-    background-image: url("/imagenes/mostwanted/espejoasimetrico3.jpg");
+    background-image: url("../imagenes/mostwanted/espejoasimetrico3.jpg");
   }
   75% {
-    background-image: url("/imagenes/mostwanted/espejoasimetrico4.jpg");
+    background-image: url("../imagenes/mostwanted/espejoasimetrico4.jpg");
   }
   100% {
-    background-image: url("/imagenes/mostwanted/espejoasimetrico5.jpg");
+    background-image: url("../imagenes/mostwanted/espejoasimetrico5.jpg");
   }
 }
 .image-slider {

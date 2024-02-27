@@ -729,7 +729,7 @@ body {
     background-image: url("/imagenes/mostwanted/espejoasimetrico4.jpg");
   }
   100% {
-    background-image: url("/imagenes/mostwanted/espejoasimetrico5.jpg");
+    background-image: url("imagenes/mostwanted/espejoasimetrico5.jpg");
   }
 }
 .image-slider {

@@ -78,7 +78,7 @@
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(8, 1fr);
         grid-column-gap: 0px;
-        grid-row-gap: 0px;
+        grid-row-gap: 15px;
         }
         
         .miniblog1 { grid-area: 1 / 2 / 3 / 3; }

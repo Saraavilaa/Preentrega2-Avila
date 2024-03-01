@@ -1,5 +1,11 @@
 @charset "UTF-8";
 /*componentes*/
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+}
+
 /* VARIABLES GENERALES */
 /* BLOG */
 /* PLAYLIST MINI BLOG */
@@ -296,13 +302,6 @@ a.active {
   }
 }
 /*FIN FOOTER*/
-/* RESET */
-* {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 10px;
-}
-
 /*FONDO DE LA PAGINA*/
 body {
   background: linear-gradient(43deg, #ffb335, #ffb436, #f5d3ff, #ffac74);
@@ -612,7 +611,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(8, 1fr);
     grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-row-gap: 15px;
   }
   .miniblog1 {
     grid-area: 1/2/3/3;

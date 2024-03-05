@@ -718,6 +718,7 @@ body {
   height: 500px;
   gap: 40px;
   margin-bottom: 0px;
+  margin-top: 10px;
 }
 
 /* LAS IMAGENES QUE VAN CAMBIANDO */
@@ -856,6 +857,14 @@ body {
 }
 
 /* FIN BOTONES DE TODAS LAS FOTOS */
+/*DATA AOS EN RESPONSIVE*/
+@media (max-width: 1200px) {
+  [data-aos] {
+    opacity: 1 !important; /* Cambia la propiedad según tus necesidades */
+    transform: none !important; /* Cambia la propiedad según tus necesidades */
+  }
+}
+/*FIN DATA AOS EN RESPONSIVE*/
 /* VARIABLES GENERALES */
 /* BLOG */
 /* PLAYLIST MINI BLOG */

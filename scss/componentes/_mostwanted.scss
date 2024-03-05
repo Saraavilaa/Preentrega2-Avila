@@ -151,11 +151,18 @@
   }
 /* FIN BOTONES DE TODAS LAS FOTOS */
 
+  .contenedormobile {
+    display: none;
+  }
+
 /*DATA AOS EN RESPONSIVE*/
   @media (max-width: 1200px) {
-    [data-aos] {
-      opacity: 1 !important; /* Cambia la propiedad según tus necesidades */
-      transform: none !important; /* Cambia la propiedad según tus necesidades */
+    .contenedordesktop {
+      display: none;
+    }
+
+    .contenedormobile {
+      display: unset;
     }
   }
 /*FIN DATA AOS EN RESPONSIVE*/

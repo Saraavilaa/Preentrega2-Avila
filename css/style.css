@@ -1,4 +1,39 @@
 @charset "UTF-8";
+/*base*/
+/* VARIABLES GENERALES */
+/* PLAYLIST MINI BLOG */
+.miniblog4, .miniblog3, .miniblog2, .miniblog1 {
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  box-shadow: 0px 0px 40px 0px rgb(255, 255, 255);
+  text-align: center;
+  padding: 30px 30px 30px 30px;
+}
+
+/* CONTACT INPUT */
+.contact__input--textarea, .contact__input {
+  height: 70px;
+  outline: none;
+  padding: 5px 0;
+  border-bottom: 2px solid #121212;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 100%;
+  color: #121212;
+  background-color: transparent;
+}
+
+/* HOME H*/
+.h3, .h2, .h22 {
+  font-family: "Merriweather Sans", sans-serif;
+  color: #2c3237;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+/* BLOG */
 /*componentes*/
 /* RESET */
 * {
@@ -1477,40 +1512,5 @@ input[type=radio] {
 }
 
 /* FIN REDES SOCIALES SLIDER */
-/*base*/
-/* VARIABLES GENERALES */
-/* PLAYLIST MINI BLOG */
-.miniblog1, .miniblog2, .miniblog3, .miniblog4 {
-  background-color: rgb(255, 255, 255);
-  border-radius: 20px;
-  box-shadow: 0px 0px 40px 0px rgb(255, 255, 255);
-  text-align: center;
-  padding: 30px 30px 30px 30px;
-}
-
-/* CONTACT INPUT */
-.contact__input, .contact__input--textarea {
-  height: 70px;
-  outline: none;
-  padding: 5px 0;
-  border-bottom: 2px solid #121212;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  width: 100%;
-  color: #121212;
-  background-color: transparent;
-}
-
-/* HOME H*/
-.h22, .h2, .h3 {
-  font-family: "Merriweather Sans", sans-serif;
-  color: #2c3237;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-
-/* BLOG */
 
 /*# sourceMappingURL=style.css.map */

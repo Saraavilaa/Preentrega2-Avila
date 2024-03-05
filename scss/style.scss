@@ -1,3 +1,9 @@
+/*base*/
+@import '../scss/base/variables';
+@import '../scss/base/extends';
+@import '../scss/base/mapas';
+@import '../scss/base/mixins';
+
 /*componentes*/
 @import '../scss/componentes/reset';
 @import '../scss/componentes/home';
@@ -7,9 +13,3 @@
 @import '../scss/componentes/mostwanted';
 @import '../scss/componentes/dropdown';
 @import '../scss/componentes/contact';
-
-/*base*/
-@import '../scss/base/variables';
-@import '../scss/base/extends';
-@import '../scss/base/mapas';
-@import '../scss/base/mixins';
